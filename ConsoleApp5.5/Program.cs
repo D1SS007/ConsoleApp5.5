@@ -16,11 +16,8 @@ namespace ConsoleApp5._5
             list.AddRange(second);
 
             Console.WriteLine("Изначальные массивы");
-
             WriteList(list);
-
-            list.Sort();                      
-
+            list.Sort(); 
             Console.WriteLine();
 
             for (int i = 1; i < list.Count; i++)
@@ -30,11 +27,9 @@ namespace ConsoleApp5._5
                     list.RemoveAt(i);
                 }
             }
-
             Console.WriteLine("Отсортированный массив без повторений");
-
             WriteList(list); 
-
+            
             static void WriteList(List<int> list)
             {
                 foreach (int i in list)
